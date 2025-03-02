@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Make Up Room</title>
+</head>
+<body>
+    <header id="cabecera">
+        <div onclick="window.location.href='index.html';" class="parteLateral">
+            <img src="img/botonInicio.png" alt="botonInicio" width="112" height="75">
+        </div>
+        <div class="parteCentral">
+            <div onclick="window.location.href='index.html';" class="boton"><p>Inicio</p></div>
+            <div onclick="window.location.href='QuienesSomos.html';" class="boton"><p>¿Quienes somos?</p></div>
+            <div onclick="window.location.href='ProductosYServicios.html';" class="boton"><p>Productos y servicios</p></div>
+            <div onclick="window.location.href='Contacto.html';" class="boton"><p>Contacto</p></div>
+            <div onclick="window.location.href='TrabajaConNosotros.html';" class="boton"><p>Trabaja con nosotros</p></div>
+        </div>
+        <div class="parteLateral">
+            <img src="img/accesorios.png" alt="accesoriosIcono" width="112" height="75">
+        </div>
+    </header>
+
+    <div class="contenedorCuerpo">
+        <div class="elementoLanding">
+            <div>
+                <h2>Datos de contacto</h2>
+                <p><b>Email:</b> maquilla@ejemplo.com<br>
+                <b>Teléfono:</b> +34 123456789</p>
+                <h2>Localización</h2>
+                <p><b>Dirección: </b>Avinguda de Alcalde Lorenzo Carbonell, 67, 03008 Alacant, Alicante</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.4512694645055!2d-0.5182048240711238!3d38.33853607184888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237015d8c8691%3A0xf07ca9e858521b77!2sMEDAC%20Alicante%20%EF%B8%8F%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1740434594907!5m2!1ses!2ses" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <div class="formulario">
+                    <form>
+                        <h2>Formulario de Contacto</h2>
+                
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required 
+                               pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,50}" 
+                               title="El nombre ha de contener 3 letras mínimos. Sólo puede haber caracteres y espacios.">
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required 
+                               title="Introduzca un email válido">
+                
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required 
+                               pattern="[0-9]{8,15}" 
+                               title="Introduce un número de teléfono correcto (mínimo 8 dígitos)">
+                
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios" placeholder="Escribe tu mensaje..."></textarea>
+                
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">También puedes visitarnos en</p>
+        <a href="https://www.facebook.com"><img src="img/facebook.png" alt="facebook-icon"></a>
+        <a href="https://www.linkedin.com"><img src="img/linkedin.png" alt="linkedin-icon"></a>
+        <a href="https://www.instagram.com"><img src="img/instagram.png" alt="instagram-icon"></a>
+        <a href="https://www.x.com"><img src="img/x.png" alt="x-icon"></a>
+        <a href="https://web.whatsapp.com"><img src="img/whatsapp.png" alt="whatsapp-icon"></a>
+        <a href="https://www.tiktok.com"><img src="img/tiktok.png" alt="tiktok-icon"></a>
+    </footer>
+</body>
+</html>

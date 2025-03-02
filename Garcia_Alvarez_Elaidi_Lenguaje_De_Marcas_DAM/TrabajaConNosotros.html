@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Make Up Room</title>
+</head>
+<body>
+    <header id="cabecera">
+        <div onclick="window.location.href='index.html';" class="parteLateral">
+            <img src="img/botonInicio.png" alt="botonInicio" width="112" height="75">
+        </div>
+        <div class="parteCentral">
+            <div onclick="window.location.href='index.html';" class="boton"><p>Inicio</p></div>
+            <div onclick="window.location.href='QuienesSomos.html';" class="boton"><p>¿Quienes somos?</p></div>
+            <div onclick="window.location.href='ProductosYServicios.html';" class="boton"><p>Productos y servicios</p></div>
+            <div onclick="window.location.href='Contacto.html';" class="boton"><p>Contacto</p></div>
+            <div onclick="window.location.href='TrabajaConNosotros.html';" class="boton"><p>Trabaja con nosotros</p></div>
+        </div>
+        <div class="parteLateral">
+            <img src="img/accesorios.png" alt="accesoriosIcono" width="112" height="75">
+        </div>
+    </header>
+
+    <div id="cuerpo">
+        <h2>Trabaja con nosotros</h2>
+    
+        <form>
+            <div class="contenedorTrabajaConNosotros">
+                <div class="seccionContenedorTrabajaConNosotros">
+                    <h3>Datos personales</h3>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,50}" title="Se ha de introducir solo letras y espacios. Mínimo hay que escribir 2 caracteres)">
+            
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,50}" title="Se ha de introducir solo letras y espacios. Mínimo hay que escribir 2 caracteres)">
+            
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required pattern="[0-9]{8}[A-Z]" title="El DNI está formado por 8 números y una letra mayúscula">
+            
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="">Seleccione...</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+            
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+            
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" id="nacionalidad" name="nacionalidad" required>
+            
+                    <label for="codigo_postal">Código Postal:</label>
+                    <input type="text" id="codigo_postal" name="codigo_postal" required pattern="[0-9]{5}" title="Debe tener 5 dígitos numéricos">
+            
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8,15}" title="Un número de teléfono está formado por 9 números">
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required title="Introduzca un email con formato válido">
+            
+
+                </div>
+    
+                <div class="seccionContenedorTrabajaConNosotros">
+                    <h3>Formación</h3>
+
+                    <label for="titulo1">Título:</label>
+                    <input type="text" id="titulo1" name="titulo" placeholder="Ejemplo: Maquilladora">
+
+                    <label for="inicio1">Año de Inicio:</label>
+                    <input type="number" id="inicio1" name="Año" min="1900" max="2025" step="1">
+
+                    <label for="fin1">Año de Finalización:</label>
+                    <input type="number" id="fin1" name="Año" min="1900" max="2025" step="1">
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="titulo2">Título:</label>
+                    <input type="text" id="titulo2" name="titulo" placeholder="Ejemplo: Maquilladora">
+
+                    <label for="inicio2">Año de Inicio:</label>
+                    <input type="number" id="inicio2" name="Año" min="1900" max="2025" step="1">
+
+                    <label for="fin2">Año de Finalización:</label>
+                    <input type="number" id="fin2" name="Año" min="1900" max="2025" step="1">
+                </div>
+    
+                <div class="seccionContenedorTrabajaConNosotros">
+                    <h3>Idiomas</h3>
+
+                    <label for="idioma">Idioma:</label>
+                    <input type="text" id="idioma" name="idioma" required placeholder="Ejemplo: Inglés">
+
+                    <label for="hablado">Hablado:</label>
+                    <select id="hablado" name="hablado">
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+
+                    <label for="leido">Leído:</label>
+                    <select id="leido" name="leido">
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+
+                    <label for="escrito">Escrito:</label>
+                    <select id="escrito" name="escrito">
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="idioma2">Idioma:</label>
+                    <input type="text" id="idioma2" name="idioma2" required placeholder="Ejemplo: Inglés">
+
+                    <label for="hablado2">Hablado:</label>
+                    <select id="hablado2" name="hablado2">
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+
+                    <label for="leido2">Leído:</label>
+                    <select id="leido2" name="leido2">
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+
+                    <label for="escrito2">Escrito:</label>
+                    <select id="escrito2" name="escrito2">
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+                </div>
+            </div> 
+
+            <button type="submit" class="trabajaConNosotrosBoton">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p class="footer-text">También puedes visitarnos en</p>
+        <a href="https://www.facebook.com"><img src="img/facebook.png" alt="facebook-icon"></a>
+        <a href="https://www.linkedin.com"><img src="img/linkedin.png" alt="linkedin-icon"></a>
+        <a href="https://www.instagram.com"><img src="img/instagram.png" alt="instagram-icon"></a>
+        <a href="https://www.x.com"><img src="img/x.png" alt="x-icon"></a>
+        <a href="https://web.whatsapp.com"><img src="img/whatsapp.png" alt="whatsapp-icon"></a>
+        <a href="https://www.tiktok.com"><img src="img/tiktok.png" alt="tiktok-icon"></a>
+    </footer>
+</body>
+</html>
