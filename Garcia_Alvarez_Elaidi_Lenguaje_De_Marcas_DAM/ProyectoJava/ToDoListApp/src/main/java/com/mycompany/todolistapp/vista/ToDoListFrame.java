@@ -7,6 +7,7 @@ package com.mycompany.todolistapp.vista;
 import com.mycompany.todolistapp.controlador.ToDoListController;
 import com.mycompany.todolistapp.modelo.FicheroTareaRepositorio;
 import com.mycompany.todolistapp.modelo.InMemoryTareaRepository;
+import com.mycompany.todolistapp.modelo.SerializableTareaRepositorio;
 import com.mycompany.todolistapp.modelo.Tarea;
 import com.mycompany.todolistapp.modelo.TareaRepository;
 import java.util.Collection;
@@ -20,7 +21,7 @@ public class ToDoListFrame extends javax.swing.JFrame {
 
 
     public ToDoListFrame() {
-        repository = new FicheroTareaRepositorio();
+        repository = new SerializableTareaRepositorio();
         controlador = new ToDoListController(this, repository);
         initComponents();
     }

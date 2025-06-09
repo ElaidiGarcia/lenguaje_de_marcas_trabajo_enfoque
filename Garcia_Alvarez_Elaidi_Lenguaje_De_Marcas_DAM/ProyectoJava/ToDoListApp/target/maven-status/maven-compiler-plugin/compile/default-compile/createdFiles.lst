@@ -6,6 +6,7 @@ com/mycompany/todolistapp/vista/ToDoListFrame.class
 com/mycompany/todolistapp/vista/ToDoListFrame$1.class
 com/mycompany/todolistapp/vista/CrearTareaFrame$1.class
 com/mycompany/todolistapp/vista/ToDoListFrame$2.class
+com/mycompany/todolistapp/modelo/SerializableTareaRepositorio.class
 com/mycompany/todolistapp/modelo/FicheroTareaRepositorio.class
 com/mycompany/todolistapp/modelo/TareaRepository.class
 com/mycompany/todolistapp/modelo/InMemoryTareaRepository.class

@@ -4,11 +4,13 @@
  */
 package com.mycompany.todolistapp.modelo;
 
+import java.io.Serializable;
+
 /**
  *
  * @author elaidigarciaalvarez
  */
-public class Tarea {
+public class Tarea implements Serializable {
     public String titulo;
     public String descripcion;
     
